@@ -1,0 +1,318 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;
+    background-color: rgb(4, 13, 18);
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #040d12;
+}
+
+li {
+    float: left;
+}
+
+li a,
+.dropbtn {
+    display: inline-block;
+    color: #FFC436;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover,
+.dropdown:hover .dropbtn {
+    background-color: #495E57;
+    transition: all 0.5s ease;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #040d12;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #FFC436;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+
+.dropdown-content a:hover {
+    background-color: #495E57;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+header {
+    display: inline;
+}
+
+#home {
+    padding: 130px;
+    text-align: center;
+    background-image: url("asset_img/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 100%;
+}
+
+.slider .slick-slide {
+    border: solid 1px ;
+}
+.slider .slick-slide img {
+    width: 100%;
+}
+
+.slick-prev, .slick-next {
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+}
+
+.slick-prev {
+    left: 5px;
+}
+.slick-next {
+    right: 5px;
+}
+
+.slick-prev:before, 
+.slick-next:before {
+    font-size: 40px;
+    text-shadow: 0 0 10px;
+}
+
+/* move dotted nav position 
+.slick-dots {
+    bottom: 15px;
+}*/
+
+.slick-dots li button:before {
+    font-size: 12px;
+    color: #fff;
+    text-shadow: 0 0 10px;
+    opacity: 1;
+}
+.slick-dots li.slick-active button:before {
+    color: #dedede;
+}
+
+/* hide dots and arrow buttons when slider is not hovered */
+.slider:not(:hover) .slick-arrow,
+.slider:not(:hover) .slick-dots {
+    opacity: 0;
+}
+
+/* transition effects for opacity */
+.slick-arrow,
+.slick-dots {
+    transition: opacity 0.5s ease-out;
+}
+
+h1.biografi {
+    font-family: 'Courgette', cursive;
+    font-size: 40px;
+}
+
+nav {
+    background-color: #040D12;
+    top: 0;
+    position: sticky;
+    padding: 5px;
+}
+
+nav a:hover {
+    background-color: #495E57;
+}
+
+nav a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #FFC436;
+}
+
+nav li {
+    list-style-type: none;
+    margin-right: 20px;
+    display: inline;
+}
+
+.card {
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px 0 rgb(255, 196, 54);
+    margin-top: 30px;
+}
+
+main {
+    color: #FFC436;
+    padding: 20px;
+    text-align: justify;
+    overflow: auto;
+}
+
+.content {
+    float: left;
+    width: 75%;
+}
+
+aside {
+    float: right;
+    width: 25%;
+    padding-left: 30px;
+}
+
+.image {
+    width: 70%;
+    max-height: 350px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+footer {
+    padding: 5px;
+    text-align: center;
+    background-color: #040D12;
+    position: sticky;
+    top: 0;
+}
+
+#biodata img {
+    width: 200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+header h2 {
+    text-align: center;
+}
+
+figure {
+    text-align: center;
+}
+
+article h2 {
+    text-align: center;
+}
+
+#contact {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: rgb(255, 196, 54) ;
+}
+
+.contact-form1,
+.contact-form2 {
+    padding: 20px;
+    width: 300px;
+    margin-bottom: 25px;
+    border: none;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    background-color: #FFF0CE;
+    font-size: 16px;
+}
+
+#text-area {
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    border: none;
+    background-color: #FFF0CE;
+    font-size: 16px;
+}
+
+input.submit {
+    width: 150px;
+    padding: 10px;
+    border: none;
+    margin-top: 25px;
+    background-color: #040d12;
+    font-size: 16px;
+    color: #FFC436;
+    font-weight: bold;
+}
+
+#text-area {
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .content,
+    aside {
+        width: 100%;
+        padding: 20px;
+    }
+
+
+    h1.biografi {
+        font-family: 'Courgette', cursive;
+        font-size: 35px;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) and (max-height:1366px) {
+    #biodata img {
+        width: 140px;
+    }
+
+    h1.biografi {
+        font-family: 'Courgette', cursive;
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+        flex-flow: column nowrap;
+    }
+
+    main aside {
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        justify-content: center;
+    }
+
+    main aside {
+        align-self: stretch;
+    }
+}
+
+.submit.hover {
+    color: #040D12;
+}
